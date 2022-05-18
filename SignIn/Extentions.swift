@@ -10,4 +10,7 @@ import SwiftUI
 extension Color{
     static let skyBlue = Color("skyBlue")
     static let textfieldGrey = Color("textfieldGrey")
+    static let creamRed = Color("creamRed")
+    static let pastelBlue = Color("pastelBlue")
+    
 }

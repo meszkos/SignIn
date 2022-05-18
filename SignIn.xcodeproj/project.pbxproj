@@ -9,26 +9,28 @@
 /* Begin PBXBuildFile section */
 		224270102834EF57001BC7BB /* SignInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242700F2834EF57001BC7BB /* SignInApp.swift */; };
 		224270122834EF57001BC7BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270112834EF57001BC7BB /* ContentView.swift */; };
-		224270142834EF63001BC7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224270132834EF63001BC7BB /* Assets.xcassets */; };
 		224270172834EF63001BC7BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224270162834EF63001BC7BB /* Preview Assets.xcassets */; };
 		2242701E2834F054001BC7BB /* BlueSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242701D2834F054001BC7BB /* BlueSignInView.swift */; };
 		224270222834F07C001BC7BB /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270212834F07C001BC7BB /* Extentions.swift */; };
 		224270242834F0FF001BC7BB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270232834F0FF001BC7BB /* CustomTextField.swift */; };
 		224270262834F984001BC7BB /* GreyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270252834F983001BC7BB /* GreyTextField.swift */; };
 		2242702828350FF6001BC7BB /* PurpleWhiteSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702728350FF6001BC7BB /* PurpleWhiteSignInView.swift */; };
+		2242702A28351FC9001BC7BB /* PastelBlueSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702928351FC9001BC7BB /* PastelBlueSignInView.swift */; };
+		2242702C28353631001BC7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2242702B28353630001BC7BB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2242700C2834EF57001BC7BB /* SignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2242700F2834EF57001BC7BB /* SignInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInApp.swift; sourceTree = "<group>"; };
 		224270112834EF57001BC7BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		224270132834EF63001BC7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		224270162834EF63001BC7BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2242701D2834F054001BC7BB /* BlueSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSignInView.swift; sourceTree = "<group>"; };
 		224270212834F07C001BC7BB /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		224270232834F0FF001BC7BB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		224270252834F983001BC7BB /* GreyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyTextField.swift; sourceTree = "<group>"; };
 		2242702728350FF6001BC7BB /* PurpleWhiteSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleWhiteSignInView.swift; sourceTree = "<group>"; };
+		2242702928351FC9001BC7BB /* PastelBlueSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelBlueSignInView.swift; sourceTree = "<group>"; };
+		2242702B28353630001BC7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 				224270202834F06A001BC7BB /* Components */,
 				2242701F2834F059001BC7BB /* Views */,
 				224270212834F07C001BC7BB /* Extentions.swift */,
-				224270132834EF63001BC7BB /* Assets.xcassets */,
+				2242702B28353630001BC7BB /* Assets.xcassets */,
 				224270152834EF63001BC7BB /* Preview Content */,
 			);
 			path = SignIn;
@@ -85,6 +87,7 @@
 			children = (
 				2242701D2834F054001BC7BB /* BlueSignInView.swift */,
 				2242702728350FF6001BC7BB /* PurpleWhiteSignInView.swift */,
+				2242702928351FC9001BC7BB /* PastelBlueSignInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,8 +159,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2242702C28353631001BC7BB /* Assets.xcassets in Resources */,
 				224270172834EF63001BC7BB /* Preview Assets.xcassets in Resources */,
-				224270142834EF63001BC7BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +174,7 @@
 				224270222834F07C001BC7BB /* Extentions.swift in Sources */,
 				224270122834EF57001BC7BB /* ContentView.swift in Sources */,
 				2242701E2834F054001BC7BB /* BlueSignInView.swift in Sources */,
+				2242702A28351FC9001BC7BB /* PastelBlueSignInView.swift in Sources */,
 				224270102834EF57001BC7BB /* SignInApp.swift in Sources */,
 				224270262834F984001BC7BB /* GreyTextField.swift in Sources */,
 				224270242834F0FF001BC7BB /* CustomTextField.swift in Sources */,
