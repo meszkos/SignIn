@@ -19,6 +19,7 @@
 		2242702C28353631001BC7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2242702B28353630001BC7BB /* Assets.xcassets */; };
 		2242702E28353F51001BC7BB /* ModernSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702D28353F51001BC7BB /* ModernSignInView.swift */; };
 		2242703028362B26001BC7BB /* YellowBlackSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */; };
+		224270342837AB35001BC7BB /* DogSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270332837AB35001BC7BB /* DogSignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2242702B28353630001BC7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2242702D28353F51001BC7BB /* ModernSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSignInView.swift; sourceTree = "<group>"; };
 		2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowBlackSignInView.swift; sourceTree = "<group>"; };
+		224270332837AB35001BC7BB /* DogSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				2242702928351FC9001BC7BB /* PastelBlueSignInView.swift */,
 				2242702D28353F51001BC7BB /* ModernSignInView.swift */,
 				2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */,
+				224270332837AB35001BC7BB /* DogSignInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				224270222834F07C001BC7BB /* Extentions.swift in Sources */,
 				2242702E28353F51001BC7BB /* ModernSignInView.swift in Sources */,
 				224270122834EF57001BC7BB /* ContentView.swift in Sources */,
+				224270342837AB35001BC7BB /* DogSignInView.swift in Sources */,
 				2242701E2834F054001BC7BB /* BlueSignInView.swift in Sources */,
 				2242702A28351FC9001BC7BB /* PastelBlueSignInView.swift in Sources */,
 				224270102834EF57001BC7BB /* SignInApp.swift in Sources */,
