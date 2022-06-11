@@ -20,6 +20,8 @@
 		2242702E28353F51001BC7BB /* ModernSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702D28353F51001BC7BB /* ModernSignInView.swift */; };
 		2242703028362B26001BC7BB /* YellowBlackSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */; };
 		224270342837AB35001BC7BB /* DogSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270332837AB35001BC7BB /* DogSignInView.swift */; };
+		227476F22854B98600BBC998 /* InstagramSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227476F12854B98600BBC998 /* InstagramSignInView.swift */; };
+		227476F42854C36300BBC998 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227476F32854C36300BBC998 /* LabelledDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		2242702D28353F51001BC7BB /* ModernSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSignInView.swift; sourceTree = "<group>"; };
 		2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowBlackSignInView.swift; sourceTree = "<group>"; };
 		224270332837AB35001BC7BB /* DogSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSignInView.swift; sourceTree = "<group>"; };
+		227476F12854B98600BBC998 /* InstagramSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSignInView.swift; sourceTree = "<group>"; };
+		227476F32854C36300BBC998 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				2242702D28353F51001BC7BB /* ModernSignInView.swift */,
 				2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */,
 				224270332837AB35001BC7BB /* DogSignInView.swift */,
+				227476F12854B98600BBC998 /* InstagramSignInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			children = (
 				224270232834F0FF001BC7BB /* CustomTextField.swift */,
 				224270252834F983001BC7BB /* GreyTextField.swift */,
+				227476F32854C36300BBC998 /* LabelledDivider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -180,11 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227476F42854C36300BBC998 /* LabelledDivider.swift in Sources */,
 				2242703028362B26001BC7BB /* YellowBlackSignInView.swift in Sources */,
 				224270222834F07C001BC7BB /* Extentions.swift in Sources */,
 				2242702E28353F51001BC7BB /* ModernSignInView.swift in Sources */,
 				224270122834EF57001BC7BB /* ContentView.swift in Sources */,
 				224270342837AB35001BC7BB /* DogSignInView.swift in Sources */,
+				227476F22854B98600BBC998 /* InstagramSignInView.swift in Sources */,
 				2242701E2834F054001BC7BB /* BlueSignInView.swift in Sources */,
 				2242702A28351FC9001BC7BB /* PastelBlueSignInView.swift in Sources */,
 				224270102834EF57001BC7BB /* SignInApp.swift in Sources */,

@@ -13,6 +13,7 @@ extension Color{
     static let creamRed = Color("creamRed")
     static let pastelBlue = Color("pastelBlue")
     static let creamGreen = Color("creamGreen")
+    static let instagramBlue = Color("instagramBlue")
     
 }
 
