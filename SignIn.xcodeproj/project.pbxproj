@@ -16,12 +16,13 @@
 		224270262834F984001BC7BB /* GreyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270252834F983001BC7BB /* GreyTextField.swift */; };
 		2242702828350FF6001BC7BB /* PurpleWhiteSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702728350FF6001BC7BB /* PurpleWhiteSignInView.swift */; };
 		2242702A28351FC9001BC7BB /* PastelBlueSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702928351FC9001BC7BB /* PastelBlueSignInView.swift */; };
-		2242702C28353631001BC7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2242702B28353630001BC7BB /* Assets.xcassets */; };
 		2242702E28353F51001BC7BB /* ModernSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702D28353F51001BC7BB /* ModernSignInView.swift */; };
 		2242703028362B26001BC7BB /* YellowBlackSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */; };
 		224270342837AB35001BC7BB /* DogSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270332837AB35001BC7BB /* DogSignInView.swift */; };
 		227476F22854B98600BBC998 /* InstagramSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227476F12854B98600BBC998 /* InstagramSignInView.swift */; };
 		227476F42854C36300BBC998 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227476F32854C36300BBC998 /* LabelledDivider.swift */; };
+		227477C4286867DF00BBC998 /* UberSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227477C3286867DD00BBC998 /* UberSignInView.swift */; };
+		227477C6286869A100BBC998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227477C5286869A100BBC998 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +36,13 @@
 		224270252834F983001BC7BB /* GreyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyTextField.swift; sourceTree = "<group>"; };
 		2242702728350FF6001BC7BB /* PurpleWhiteSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleWhiteSignInView.swift; sourceTree = "<group>"; };
 		2242702928351FC9001BC7BB /* PastelBlueSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelBlueSignInView.swift; sourceTree = "<group>"; };
-		2242702B28353630001BC7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2242702D28353F51001BC7BB /* ModernSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSignInView.swift; sourceTree = "<group>"; };
 		2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowBlackSignInView.swift; sourceTree = "<group>"; };
 		224270332837AB35001BC7BB /* DogSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSignInView.swift; sourceTree = "<group>"; };
 		227476F12854B98600BBC998 /* InstagramSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSignInView.swift; sourceTree = "<group>"; };
 		227476F32854C36300BBC998 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
+		227477C3286867DD00BBC998 /* UberSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberSignInView.swift; sourceTree = "<group>"; };
+		227477C5286869A100BBC998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,7 @@
 				224270202834F06A001BC7BB /* Components */,
 				2242701F2834F059001BC7BB /* Views */,
 				224270212834F07C001BC7BB /* Extentions.swift */,
-				2242702B28353630001BC7BB /* Assets.xcassets */,
+				227477C5286869A100BBC998 /* Assets.xcassets */,
 				224270152834EF63001BC7BB /* Preview Content */,
 			);
 			path = SignIn;
@@ -102,6 +104,7 @@
 				2242702F28362B25001BC7BB /* YellowBlackSignInView.swift */,
 				224270332837AB35001BC7BB /* DogSignInView.swift */,
 				227476F12854B98600BBC998 /* InstagramSignInView.swift */,
+				227477C3286867DD00BBC998 /* UberSignInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,7 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2242702C28353631001BC7BB /* Assets.xcassets in Resources */,
+				227477C6286869A100BBC998 /* Assets.xcassets in Resources */,
 				224270172834EF63001BC7BB /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227477C4286867DF00BBC998 /* UberSignInView.swift in Sources */,
 				227476F42854C36300BBC998 /* LabelledDivider.swift in Sources */,
 				2242703028362B26001BC7BB /* YellowBlackSignInView.swift in Sources */,
 				224270222834F07C001BC7BB /* Extentions.swift in Sources */,
@@ -337,7 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,7 +371,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
