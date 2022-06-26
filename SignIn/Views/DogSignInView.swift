@@ -30,9 +30,9 @@ struct DogSignInView: View {
                         .font(.title).bold()
                         .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
                     
-                    GreyTextField(imageName: "phone.fill", imageColor: .orange, placeholderText: "Phone number", text: $phoneNumber)
+                    GrayTextField(imageName: "phone.fill", imageColor: .orange, placeholderText: "Phone number", text: $phoneNumber)
                         .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
-                    GreyTextField(imageName: "lock.fill", imageColor: .orange, placeholderText: "Password", text: $password)
+                    GrayTextField(imageName: "lock.fill", imageColor: .orange, placeholderText: "Password", text: $password)
                         .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
                     
                     Button {

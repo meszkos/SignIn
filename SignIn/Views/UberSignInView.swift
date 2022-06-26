@@ -22,12 +22,12 @@ struct UberSignInView: View {
                 uberLogo
                 uber
                 
-                GreyTextField(imageName: "person",
+                GrayTextField(imageName: "person",
                               imageColor: .black,
                               placeholderText: "Email",
                               isSecureField: false,
                               text: $email)
-                GreyTextField(imageName: "lock",
+                GrayTextField(imageName: "lock",
                               imageColor: .black,
                               placeholderText: "Password",
                               isSecureField: true,

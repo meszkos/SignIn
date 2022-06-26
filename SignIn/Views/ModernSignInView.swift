@@ -33,9 +33,9 @@ struct ModernSignInView: View {
                     Text("Log in")
                         .font(.title).bold()
                     
-                    GreyTextField(imageName: "envelope", imageColor: Color.gray, placeholderText: "Email", isSecureField: false, text: $email)
+                    GrayTextField(imageName: "envelope", imageColor: Color.gray, placeholderText: "Email", isSecureField: false, text: $email)
                     
-                    GreyTextField(imageName: "lock.fill", imageColor: Color.gray, placeholderText: "Password", isSecureField: true, text: $password)
+                    GrayTextField(imageName: "lock.fill", imageColor: Color.gray, placeholderText: "Password", isSecureField: true, text: $password)
                     
                     SignInButton()
                     

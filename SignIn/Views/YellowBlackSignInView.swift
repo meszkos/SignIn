@@ -20,8 +20,8 @@ struct YellowBlackSignInView: View {
                 HeaderView()
                 
                 VStack{
-                    GreyTextField(imageName: "envelope", imageColor: .yellow, placeholderText: "Email", text: $email)
-                    GreyTextField(imageName: "lock", imageColor: .yellow, placeholderText: "Password", text: $password)
+                    GrayTextField(imageName: "envelope", imageColor: .yellow, placeholderText: "Email", text: $email)
+                    GrayTextField(imageName: "lock", imageColor: .yellow, placeholderText: "Password", text: $password)
                     HStack{
                         Spacer()
                         Button{

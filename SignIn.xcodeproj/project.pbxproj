@@ -13,7 +13,7 @@
 		2242701E2834F054001BC7BB /* BlueSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242701D2834F054001BC7BB /* BlueSignInView.swift */; };
 		224270222834F07C001BC7BB /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270212834F07C001BC7BB /* Extentions.swift */; };
 		224270242834F0FF001BC7BB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270232834F0FF001BC7BB /* CustomTextField.swift */; };
-		224270262834F984001BC7BB /* GreyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270252834F983001BC7BB /* GreyTextField.swift */; };
+		224270262834F984001BC7BB /* GrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224270252834F983001BC7BB /* GrayTextField.swift */; };
 		2242702828350FF6001BC7BB /* PurpleWhiteSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702728350FF6001BC7BB /* PurpleWhiteSignInView.swift */; };
 		2242702A28351FC9001BC7BB /* PastelBlueSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702928351FC9001BC7BB /* PastelBlueSignInView.swift */; };
 		2242702E28353F51001BC7BB /* ModernSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242702D28353F51001BC7BB /* ModernSignInView.swift */; };
@@ -33,7 +33,7 @@
 		2242701D2834F054001BC7BB /* BlueSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSignInView.swift; sourceTree = "<group>"; };
 		224270212834F07C001BC7BB /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		224270232834F0FF001BC7BB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		224270252834F983001BC7BB /* GreyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyTextField.swift; sourceTree = "<group>"; };
+		224270252834F983001BC7BB /* GrayTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextField.swift; sourceTree = "<group>"; };
 		2242702728350FF6001BC7BB /* PurpleWhiteSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleWhiteSignInView.swift; sourceTree = "<group>"; };
 		2242702928351FC9001BC7BB /* PastelBlueSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelBlueSignInView.swift; sourceTree = "<group>"; };
 		2242702D28353F51001BC7BB /* ModernSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSignInView.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				224270232834F0FF001BC7BB /* CustomTextField.swift */,
-				224270252834F983001BC7BB /* GreyTextField.swift */,
+				224270252834F983001BC7BB /* GrayTextField.swift */,
 				227476F32854C36300BBC998 /* LabelledDivider.swift */,
 			);
 			path = Components;
@@ -200,7 +200,7 @@
 				2242701E2834F054001BC7BB /* BlueSignInView.swift in Sources */,
 				2242702A28351FC9001BC7BB /* PastelBlueSignInView.swift in Sources */,
 				224270102834EF57001BC7BB /* SignInApp.swift in Sources */,
-				224270262834F984001BC7BB /* GreyTextField.swift in Sources */,
+				224270262834F984001BC7BB /* GrayTextField.swift in Sources */,
 				224270242834F0FF001BC7BB /* CustomTextField.swift in Sources */,
 				2242702828350FF6001BC7BB /* PurpleWhiteSignInView.swift in Sources */,
 			);

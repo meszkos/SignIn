@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GreyTextField: View {
+struct GrayTextField: View {
     
     var imageName: String
     var imageColor: Color
@@ -42,6 +42,6 @@ struct GreyTextField: View {
 
 struct GreyTextField_Previews: PreviewProvider {
     static var previews: some View {
-        GreyTextField(imageName: "person.circle.fill",imageColor: .purple, placeholderText: "Email", isSecureField: false, text: .constant(""))
+        GrayTextField(imageName: "person.circle.fill",imageColor: .purple, placeholderText: "Email", isSecureField: false, text: .constant(""))
     }
 }

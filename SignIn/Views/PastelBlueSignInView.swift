@@ -33,7 +33,7 @@ struct PastelBlueSignInView: View {
                         }
             
             
-            GreyTextField(imageName: "phone", imageColor: Color.creamRed, placeholderText: "Phone number", isSecureField: false, text: $phoneNumber)
+            GrayTextField(imageName: "phone", imageColor: Color.creamRed, placeholderText: "Phone number", isSecureField: false, text: $phoneNumber)
                 .keyboardType(.numberPad)
                 .padding(.bottom, 20)
             
