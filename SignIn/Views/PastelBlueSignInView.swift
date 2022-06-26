@@ -10,38 +10,26 @@ import SwiftUI
 struct PastelBlueSignInView: View {
     
     @State private var phoneNumber = ""
-    @State var shadowanim  = false
-    @State var rotateanim  = false
+    @State var shadowanim = false
+    @State var rotateanim = false
     
     var body: some View {
         VStack{
-            Text("Login")
-                .font(.largeTitle).bold()
-                .foregroundColor(.creamRed)
             
-            Image("calendarImage")
-                .resizable()
-                .frame(width: 350, height: 250)
-                .padding(.bottom, 30)
+            login
+            animatedImage
+            
+            GrayTextField(imageName: "phone",
+                          imageColor: Color.creamRed,
+                          placeholderText: "Phone number",
+                          isSecureField: false,
+                          text: $phoneNumber)
+                    .keyboardType(.numberPad)
+                    .padding(.bottom, 20)
                 
-                .rotationEffect(.degrees(rotateanim ? 0 : -10))
-                        .onAppear() {
-                            withAnimation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
-                                                {
-                                                    rotateanim.toggle()
-                                                }
-                        }
-            
-            
-            GrayTextField(imageName: "phone", imageColor: Color.creamRed, placeholderText: "Phone number", isSecureField: false, text: $phoneNumber)
-                .keyboardType(.numberPad)
-                .padding(.bottom, 20)
-            
-           ButtonsStackView()
-                
-
+            buttonsStack
             Spacer()
-            SignUpTextView()
+            signUpText
         }
         .padding()
     }
@@ -53,8 +41,50 @@ struct PastelBlueSignInView_Previews: PreviewProvider {
     }
 }
 
-struct SocialButtonsRowView: View {
-    var body: some View {
+extension PastelBlueSignInView{
+    
+//MARK: - Header
+    private var login: some View{
+        Text("Login")
+            .font(.largeTitle).bold()
+            .foregroundColor(.creamRed)
+    }
+    
+    private var animatedImage: some View{
+        Image("calendarImage")
+            .resizable()
+            .frame(width: 350, height: 250)
+            .padding(.bottom, 30)
+            
+            .rotationEffect(.degrees(rotateanim ? 0 : -10))
+                    .onAppear() {
+                        withAnimation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
+                                        {
+                                            rotateanim.toggle()
+                                        }
+                    }
+    }
+//MARK: - Buttons
+    private var buttonsStack: some View{
+            VStack(spacing: 30){
+                Button {
+                    //Sign in user
+                } label: {
+                    Text("Login")
+                        .fontWeight(.bold)
+                        .frame(height: 55)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.pastelBlue)
+                        .foregroundColor(.white)
+                        .cornerRadius(30)
+                        .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
+                }
+                Text("Or Login with")
+                socialButtons
+            }
+    }
+    
+    private var socialButtons: some View{
         HStack(spacing: 30){
             Button {
                 //Sign in with Facebook
@@ -82,10 +112,7 @@ struct SocialButtonsRowView: View {
             }
         }
     }
-}
-
-struct SignUpTextView: View {
-    var body: some View {
+    private var signUpText: some View {
         HStack{
             Text("Don't have an account?")
             NavigationLink{
@@ -96,29 +123,6 @@ struct SignUpTextView: View {
                     .fontWeight(.bold)
                     .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
             }
-        }
-    }
-}
-
-struct ButtonsStackView: View {
-    var body: some View {
-        VStack(spacing: 30){
-            
-            
-            Button {
-                //Sign in user
-            } label: {
-                Text("Login")
-                    .fontWeight(.bold)
-                    .frame(height: 55)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.pastelBlue)
-                    .foregroundColor(.white)
-                    .cornerRadius(30)
-                    .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
-            }
-            Text("Or Login with")
-            SocialButtonsRowView()
         }
     }
 }
