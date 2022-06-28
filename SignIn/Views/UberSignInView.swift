@@ -49,17 +49,18 @@ struct UberSignInView_Previews: PreviewProvider {
     }
 }
 
+//MARK: - EXTENSION
 extension UberSignInView{
     
 //MARK: - Header
     
-    var uberLogo: some View{
+    private var uberLogo: some View{
         Image("uber")
             .resizable()
             .frame(width: 100, height: 100)
             .foregroundColor(.white)
     }
-    var uber: some View{
+    private var uber: some View{
         Text("U B E R")
             .foregroundColor(.white)
             .bold()
@@ -70,7 +71,7 @@ extension UberSignInView{
 
 //MARK: - Buttons
     
-    var signInButton: some View{
+    private  var signInButton: some View{
         Button {
             //Log in screen
         } label: {
@@ -83,7 +84,7 @@ extension UberSignInView{
                 .padding(.top, 20)
         }
     }
-    var forgotPasswordText: some View{
+    private var forgotPasswordText: some View{
         NavigationLink {
             //Forgot password
         } label: {
@@ -92,7 +93,7 @@ extension UberSignInView{
         }
     }
     
-    var socialStack: some View{
+    private var socialStack: some View{
         HStack(spacing: 20){
             Button {
                 //Sign in with FB

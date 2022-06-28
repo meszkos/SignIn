@@ -28,29 +28,10 @@ struct ModernSignInView: View {
                     .fontWeight(.bold)
                     
                 Spacer()
-
-                VStack(alignment: .leading, spacing: 30){
-                    Text("Log in")
-                        .font(.title).bold()
-                    
-                    GrayTextField(imageName: "envelope", imageColor: Color.gray, placeholderText: "Email", isSecureField: false, text: $email)
-                    
-                    GrayTextField(imageName: "lock.fill", imageColor: Color.gray, placeholderText: "Password", isSecureField: true, text: $password)
-                    
-                    SignInButton()
-                    
-
-                }
-                .padding()
-                .background(Color.white)
-                .clipShape(RoundedRectangle(cornerRadius: 20,style: .continuous))
-                .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
                 
-                ForgotPassword()
+                loginSheet
+                forgotPasswordText
                 Spacer()
-                
-
-                    
             }
             .padding()
         }
@@ -63,8 +44,10 @@ struct ModernSignInView_Previews: PreviewProvider {
     }
 }
 
-struct SignInButton: View {
-    var body: some View {
+//MARK: - EXTENSION
+extension ModernSignInView{
+    
+    private var signInButton: some View{
         Button {
             //Sign In
         } label: {
@@ -77,10 +60,8 @@ struct SignInButton: View {
                 .cornerRadius(20)
         }
     }
-}
-
-struct ForgotPassword: View {
-    var body: some View {
+    
+    private var forgotPasswordText: some View{
         Button {
             //Recover password action
         } label: {
@@ -88,4 +69,26 @@ struct ForgotPassword: View {
                 .foregroundColor(.gray)
         }
     }
+    
+//MARK: - Sheet
+    
+    private var loginSheet: some View{
+        VStack(alignment: .leading, spacing: 30){
+            Text("Log in")
+                .font(.title).bold()
+            
+            GrayTextField(imageName: "envelope", imageColor: Color.gray, placeholderText: "Email", isSecureField: false, text: $email)
+            
+            GrayTextField(imageName: "lock.fill", imageColor: Color.gray, placeholderText: "Password", isSecureField: true, text: $password)
+            
+            signInButton
+            
+
+        }
+        .padding()
+        .background(Color.white)
+        .clipShape(RoundedRectangle(cornerRadius: 20,style: .continuous))
+        .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
+    }
 }
+

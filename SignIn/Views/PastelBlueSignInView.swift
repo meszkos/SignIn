@@ -1,5 +1,5 @@
 //
-//  RedishSignInView.swift
+// PastelBlueSignInView.swift
 //  SignIn
 //
 //  Created by MacOS on 18/05/2022.
@@ -10,8 +10,7 @@ import SwiftUI
 struct PastelBlueSignInView: View {
     
     @State private var phoneNumber = ""
-    @State var shadowanim = false
-    @State var rotateanim = false
+    @State var rotateAnimation = false
     
     var body: some View {
         VStack{
@@ -41,6 +40,7 @@ struct PastelBlueSignInView_Previews: PreviewProvider {
     }
 }
 
+//MARK: - EXTENSION
 extension PastelBlueSignInView{
     
 //MARK: - Header
@@ -56,11 +56,11 @@ extension PastelBlueSignInView{
             .frame(width: 350, height: 250)
             .padding(.bottom, 30)
             
-            .rotationEffect(.degrees(rotateanim ? 0 : -10))
+            .rotationEffect(.degrees(rotateAnimation ? 0 : -10))
                     .onAppear() {
                         withAnimation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true))
                                         {
-                                            rotateanim.toggle()
+                                            rotateAnimation.toggle()
                                         }
                     }
     }

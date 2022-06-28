@@ -52,10 +52,11 @@ struct InstagramSignInView_Previews: PreviewProvider {
     }
 }
 
+//MARK: - EXTENSION
 extension InstagramSignInView{
     
     
-    var userField: some View{
+    private var userField: some View{
         ZStack{
             Color.textfieldGrey
             TextField("Phone number, username or email", text: $email)
@@ -71,7 +72,7 @@ extension InstagramSignInView{
     }
     
     
-    var passwordField: some View{
+    private var passwordField: some View{
         ZStack{
             Color.textfieldGrey
             SecureField("Password", text: $password)
@@ -86,7 +87,7 @@ extension InstagramSignInView{
         .cornerRadius(8)
        
     }
-    var logInButton: some View{
+    private var logInButton: some View{
         Button {
             //Log In user
         } label: {
@@ -99,7 +100,7 @@ extension InstagramSignInView{
         }
     }
     
-    var facebook: some View{
+    private var facebook: some View{
         HStack{
             Image("fbIcon")
                 .resizable()
@@ -115,7 +116,7 @@ extension InstagramSignInView{
         }
         .padding(.vertical, 30)
     }
-    var signUp: some View{
+    private var signUp: some View{
         HStack{
             Text("Don't have an account?")
                 .foregroundColor(.gray)
@@ -127,7 +128,7 @@ extension InstagramSignInView{
             }
         }
     }
-    var meta: some View{
+    private var meta: some View{
         VStack{
             Text("from")
                 .foregroundColor(.gray)
