@@ -17,35 +17,22 @@ struct DogSignInView: View {
             Color.creamGreen
                 .ignoresSafeArea()
             VStack{
-                DogImage()
+                dogImage
                     
                 VStack(alignment: .leading){
-                    Text("Welcome back")
-                        .foregroundColor(.white)
-                        .font(.largeTitle).bold()
-                        .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
-                    
-                    Text("Sign In")
-                        .foregroundColor(.white)
-                        .font(.title).bold()
-                        .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
+                    welcomeBack
+                    signIn
                     
                     GrayTextField(imageName: "phone.fill", imageColor: .orange, placeholderText: "Phone number", text: $phoneNumber)
                         .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
                     GrayTextField(imageName: "lock.fill", imageColor: .orange, placeholderText: "Password", text: $password)
                         .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
                     
-                    Button {
-                        // User forgot password action
-                    } label: {
-                        Text("Forgot password")
-                            .foregroundColor(.gray).bold()
-                    }
-                    SignButton()
+                    forgotPasswordText
+                    signInButton
                     Spacer()
-                
                 }
-                SignUp()
+                signUpText
             }
             .padding()
         }
@@ -57,17 +44,42 @@ struct DogSignInView_Previews: PreviewProvider {
         DogSignInView()
     }
 }
-
-struct DogImage: View {
-    var body: some View {
+//MARK: - EXTENSION
+extension DogSignInView{
+    
+//MARK: - Image
+    private var dogImage: some View{
         Image("dogIcon")
             .resizable()
             .frame(width: 350, height: 350)
     }
-}
-
-struct SignButton: View {
-    var body: some View {
+    
+//MARK: - Header Text
+    private var welcomeBack: some View{
+        Text("Welcome back")
+            .foregroundColor(.white)
+            .font(.largeTitle).bold()
+            .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
+        
+    }
+    private var signIn: some View{
+        Text("Sign In")
+            .foregroundColor(.white)
+            .font(.title).bold()
+            .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
+    }
+    
+//MARK: - Action
+    private var forgotPasswordText: some View{
+        Button {
+            // Forgot password action
+        } label: {
+            Text("Forgot password")
+                .foregroundColor(.gray).bold()
+        }
+    }
+    
+    private var signInButton: some View{
         Button {
             //Sign user in
         } label: {
@@ -81,14 +93,11 @@ struct SignButton: View {
                 .shadow(color: Color.primary.opacity(0.2), radius: 10, x: 0, y: 5)
         }
     }
-}
-
-struct SignUp: View {
-    var body: some View {
+    
+    private var signUpText: some View{
         HStack{
             Text("New user?")
                 .foregroundColor(.gray)
-            
             NavigationLink{
                 //Take user to Sign Up screen
             }label:{

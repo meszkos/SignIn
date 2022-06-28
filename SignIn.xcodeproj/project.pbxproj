@@ -23,6 +23,8 @@
 		227476F42854C36300BBC998 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227476F32854C36300BBC998 /* LabelledDivider.swift */; };
 		227477C4286867DF00BBC998 /* UberSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227477C3286867DD00BBC998 /* UberSignInView.swift */; };
 		227477C6286869A100BBC998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227477C5286869A100BBC998 /* Assets.xcassets */; };
+		22B1E783286AE80D00A3810A /* StravaSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1E782286AE80D00A3810A /* StravaSignInView.swift */; };
+		22B1E785286AF01900A3810A /* BlackTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B1E784286AF01900A3810A /* BlackTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		227476F32854C36300BBC998 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
 		227477C3286867DD00BBC998 /* UberSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberSignInView.swift; sourceTree = "<group>"; };
 		227477C5286869A100BBC998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22B1E782286AE80D00A3810A /* StravaSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaSignInView.swift; sourceTree = "<group>"; };
+		22B1E784286AF01900A3810A /* BlackTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				224270332837AB35001BC7BB /* DogSignInView.swift */,
 				227476F12854B98600BBC998 /* InstagramSignInView.swift */,
 				227477C3286867DD00BBC998 /* UberSignInView.swift */,
+				22B1E782286AE80D00A3810A /* StravaSignInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			children = (
 				224270232834F0FF001BC7BB /* CustomTextField.swift */,
 				224270252834F983001BC7BB /* GrayTextField.swift */,
+				22B1E784286AF01900A3810A /* BlackTextField.swift */,
 				227476F32854C36300BBC998 /* LabelledDivider.swift */,
 			);
 			path = Components;
@@ -193,6 +199,8 @@
 				227476F42854C36300BBC998 /* LabelledDivider.swift in Sources */,
 				2242703028362B26001BC7BB /* YellowBlackSignInView.swift in Sources */,
 				224270222834F07C001BC7BB /* Extentions.swift in Sources */,
+				22B1E783286AE80D00A3810A /* StravaSignInView.swift in Sources */,
+				22B1E785286AF01900A3810A /* BlackTextField.swift in Sources */,
 				2242702E28353F51001BC7BB /* ModernSignInView.swift in Sources */,
 				224270122834EF57001BC7BB /* ContentView.swift in Sources */,
 				224270342837AB35001BC7BB /* DogSignInView.swift in Sources */,

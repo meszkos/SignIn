@@ -14,7 +14,7 @@ extension Color{
     static let pastelBlue = Color("pastelBlue")
     static let creamGreen = Color("creamGreen")
     static let instagramBlue = Color("instagramBlue")
-    
+    static let stravaOrange = Color("stravaOrange")
 }
 
 struct RoundedShape: Shape{

@@ -15,35 +15,22 @@ struct YellowBlackSignInView: View {
     var body: some View {
         ZStack{
             Color.black
-                
             VStack{
-                HeaderView()
+                headerView
                 
                 VStack{
                     GrayTextField(imageName: "envelope", imageColor: .yellow, placeholderText: "Email", text: $email)
                     GrayTextField(imageName: "lock", imageColor: .yellow, placeholderText: "Password", text: $password)
-                    HStack{
-                        Spacer()
-                        Button{
-                            // Forgot password action
-                        }label: {
-                            Text("Forgot password?")
-                                .foregroundColor(.yellow)
-                        }
-                        
-                    }
-                    SigninButton()
+                    forgotPasswordText
+                    signInButton
                 }
                 .padding()
-                
                 Spacer()
-                SignupText()
+                
+                signUpText
             }
-            
-            
         }
         .ignoresSafeArea()
-        
     }
 }
 
@@ -53,8 +40,10 @@ struct YellowBlackSignInView_Previews: PreviewProvider {
     }
 }
 
-struct HeaderView: View {
-    var body: some View {
+//MARK: - EXTENSION
+extension YellowBlackSignInView{
+    
+    private var headerView: some View{
         VStack(alignment: .leading){
             HStack{Spacer()}
             
@@ -72,10 +61,37 @@ struct HeaderView: View {
         .foregroundColor(.white)
         .clipShape(RoundedShape(corners: [.bottomRight]))
     }
-}
-
-struct SignupText: View {
-    var body: some View {
+    
+    private var forgotPasswordText: some View{
+        HStack{
+            Spacer()
+            Button{
+                // Forgot password action
+            }label: {
+                Text("Forgot password?")
+                    .foregroundColor(.yellow)
+            }
+            
+        }
+    }
+    
+    private var signInButton: some View{
+        Button {
+            //Sign in
+        } label: {
+            Text("Sign In")
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .frame(width: 340, height: 50)
+                .background(Color.yellow)
+                .cornerRadius(30)
+        }
+        .padding(.top, 30)
+        .shadow(color: .white.opacity(0.2), radius: 10, x: 0, y: 0)
+    }
+    
+    
+    private var signUpText: some View{
         HStack{
             Text("Don't have an account?")
                 .foregroundColor(.white)
@@ -89,21 +105,5 @@ struct SignupText: View {
         }
         .padding()
     }
-}
-
-struct SigninButton: View {
-    var body: some View {
-        Button {
-            //Sign in
-        } label: {
-            Text("Sign In")
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .frame(width: 340, height: 50)
-                .background(Color.yellow)
-                .cornerRadius(30)
-        }
-        .padding(.top, 30)
-        .shadow(color: .white.opacity(0.5), radius: 10, x: 0, y: 0)
-    }
+    
 }
