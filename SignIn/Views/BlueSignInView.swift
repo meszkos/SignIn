@@ -20,9 +20,16 @@ struct BlueSignInView: View {
                 astronaut
                 signIn
                 
-                CustomTextField(imageName: "envelope", placeholderText: "Email", isSecureField: false, text: $email)
+                CustomTextField(imageName: "envelope",
+                                placeholderText: "Email",
+                                isSecureField: false,
+                                text: $email)
                     .padding()
-                CustomTextField(imageName: "lock", placeholderText: "Password", isSecureField: true, text: $password)
+                
+                CustomTextField(imageName: "lock",
+                                placeholderText: "Password",
+                                isSecureField: true,
+                                text: $password)
                     .padding()
                 
                 continueButton
