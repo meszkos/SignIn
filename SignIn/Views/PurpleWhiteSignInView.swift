@@ -21,8 +21,17 @@ struct PurpleWhiteSignInView: View {
                     .foregroundColor(.gray)
                     .padding(.bottom, 30)
                     
-                GrayTextField(imageName: "person.circle.fill", imageColor: .purple, placeholderText: "Email", isSecureField: false, text: $email)
-                GrayTextField(imageName: "lock.fill", imageColor: .purple, placeholderText: "Password", isSecureField: true, text: $password)
+                GrayTextField(imageName: "person.circle.fill",
+                              imageColor: .purple,
+                              placeholderText: "Email",
+                              isSecureField: false,
+                              text: $email)
+                
+                GrayTextField(imageName: "lock.fill",
+                              imageColor: .purple,
+                              placeholderText: "Password",
+                              isSecureField: true,
+                              text: $password)
                 
                 recoverPassword
             }

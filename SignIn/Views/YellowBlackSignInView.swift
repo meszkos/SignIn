@@ -19,8 +19,15 @@ struct YellowBlackSignInView: View {
                 headerView
                 
                 VStack{
-                    GrayTextField(imageName: "envelope", imageColor: .yellow, placeholderText: "Email", text: $email)
-                    GrayTextField(imageName: "lock", imageColor: .yellow, placeholderText: "Password", text: $password)
+                    GrayTextField(imageName: "envelope"
+                                  , imageColor: .yellow,
+                                  placeholderText: "Email",
+                                  text: $email)
+                    
+                    GrayTextField(imageName: "lock",
+                                  imageColor: .yellow,
+                                  placeholderText: "Password",
+                                  text: $password)
                     forgotPasswordText
                     signInButton
                 }

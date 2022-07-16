@@ -23,10 +23,17 @@ struct StravaSignInView: View {
                 fbButton
                 googleButton
                 or
-                    
-                BlackTextField(imageName: "envelope.fill", imageColor: .black, placeholderText: "Email", isSecureField: false, text: $email)
+                BlackTextField(imageName: "envelope.fill",
+                               imageColor: .black,
+                               placeholderText: "Email",
+                               isSecureField: false,
+                               text: $email)
                     .opacity(0.7)
-                BlackTextField(imageName: "lock.fill", imageColor: .black, placeholderText: "Password", isSecureField: true, text: $email)
+                BlackTextField(imageName: "lock.fill",
+                               imageColor: .black,
+                               placeholderText: "Password",
+                               isSecureField: true,
+                               text: $email)
                     .opacity(0.7)
                 
                 logInButton
